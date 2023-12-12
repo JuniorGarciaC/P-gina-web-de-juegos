@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en línea</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+
+<body>
+    <header>
+        <h1>Tienda en línea</h1>
+    </header>
+    <main>
+        <section id="productos">
+            <!-- ... (productos) ... -->
+        </section>
+        <section id="carrito">
+            <form id="formularioCompra" onsubmit="realizarCompra(event)">
+                <!-- Información del comprador -->
+                <h2>Información del comprador</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <!-- Información de facturación -->
+                <h2>Información de facturación</h2>
+                <label for="direccion">Dirección de facturación:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <label for="codigoPostal">Código postal:</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" required>
+
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+
+                <!-- Información del pago -->
+                <h2>Información de pago</h2>
+                <label for="metodoPago">Método de pago:</label>
+                <select id="metodoPago" name="metodoPago" required>
+                    <option value="tarjeta">Tarjeta de crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <!-- Agrega más opciones según tus necesidades -->
+                </select>
+
+                <label for="tarjeta">Número de tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta" required>
+
+                <label for="caducidad">Fecha de caducidad:</label>
+                <select id="mesCaducidad" name="mesCaducidad" required>
+                    <option value="01">01 - Enero</option>
+                    <option value="02">02 - Febrero</option>
+                    <option value="03">03 - Marzo</option>
+                    <option value="04">04 - Abril</option>
+                    <option value="05">05 - Mayo</option>
+                    <option value="06">06 - Junio</option>
+                    <option value="07">07 - Julio</option>
+                    <option value="08">08 - Agosto</option>
+                    <option value="09">09 - Septiembre</option>
+                    <option value="10">10 - Octubre</option>
+                    <option value="11">11 - Noviembre</option>
+                    <option value="12">12 - Diciembre</option>
+                </select>
+                <select id="anoCaducidad" name="anoCaducidad" required>
+                    <script>
+                        const anoActual = new Date().getFullYear();
+                        for (let ano = 2019; ano <= anoActual + 10; ano++) {
+                            document.write(`<option value="${ano}">${ano}</option>`);
+                        }
+                    </script>
+                </select>
+
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button class="button" type="submit">Realizar compra</button>
+            </form>
+
+            <script src="script.js"></script>
+            
+        </section>
+    </main>
+    <footer>
+        <p id="agradecimiento">¡Muchas gracias por su compra!</p>
+        <p>&copy; 2023 Tienda en línea</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1b1726;
+}
+
+header,
+footer {
+    background-color: #1b1726;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#productos,
+#carrito {
+    background-color: #2a223a;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: #FF5A2C;
+}
+
+input,
+select {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #1b1726;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 20px; 
+}
+#agradecimiento {
+    font-size: 1.2em;
+    /* Tamaño de fuente más grande para el mensaje de agradecimiento */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-bottom: 10px;
+    /* Margen inferior para separar del mensaje de derechos de autor */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    border: 1px solid #2a223a; /* Añade un borde con color gris claro */
+    border-radius: 10px; /* Hace que las esquinas sean redondeadas */
+    padding: 8px; /* Añade un poco de espacio alrededor del contenido */
+    margin-bottom: 10px; /* Agrega un margen inferior para separar los campos */
+    background-color: #463860; /* Cambia el color de fondo a gris claro o tu elección */
+}
+
+select {
+    border: 1px solid #2a223a;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #463860;
+}
+button {
+    background-color: #FF5A2C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-size: 10px; 
+}
+
+button:hover {
+    background-color: #FF783C; 
+}

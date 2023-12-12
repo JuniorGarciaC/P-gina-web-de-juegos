@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+      <div class="form-content">
+
+          <h2>Enviar su soporte</h2>
+          <form action="https://formsubmit.co/jg405160@gmail.com" method="POST">
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" id="email">  
+
+            <label for="subjecet">Asunto</label>
+            <input type="text" name="subject" id="subject">
+            
+            <label for="coments">Comentarios</label>
+            <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
+
+            <input class="btn" type="submit" value="Enviar">
+            
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+      </div>
+      
+</body>
+</html>
